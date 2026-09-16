@@ -5,7 +5,6 @@ body {
     margin: 0;
 }
 
-/* HEADER */
 header {
     background: #111;
     color: #ff003c;
@@ -14,7 +13,6 @@ header {
     border-bottom: 3px solid #ff003c;
 }
 
-/* MENU */
 nav a {
     color: white;
     margin: 10px;
@@ -26,49 +24,31 @@ nav a:hover {
     color: #ff003c;
 }
 
-/* CONTENEDOR GENERAL */
-.container {
-    width: 80%;
-    margin: auto;
-}
-
-/* SECCIONES SEPARADAS */
-.section {
+section {
     background: #1a1a1a;
-    margin: 25px 0;
+    width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    border-left: 5px solid #ff003c;
     border-radius: 10px;
+    box-shadow: 0 0 10px #ff003c;
 }
 
-/* TITULOS */
-h2, h3 {
-    color: #ff003c;
-}
-
-/* IMAGEN */
 img {
     border-radius: 50%;
     border: 3px solid #ff003c;
 }
 
-/* LISTAS */
+h2 {
+    color: #ff003c;
+}
+
 ul {
     list-style: none;
     padding: 0;
 }
 
 li {
-    margin: 8px 0;
-}
-
-/* FORMULARIO */
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: none;
+    margin: 10px 0;
 }
 
 button {
@@ -82,4 +62,12 @@ button {
 
 button:hover {
     background: #cc002f;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
 }
