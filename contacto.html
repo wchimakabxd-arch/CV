@@ -31,12 +31,18 @@
 
 <h2 class="text-danger">Contacto</h2>
 
-<p><strong>Email:</strong> wchimakabxd@gmail.com</p>
-<p><strong>Teléfono:</strong> 3052162144</p>
+<!-- INFO DE CONTACTO (ARREGLADO) -->
+<div class="mb-3">
+    <p class="mb-1"><strong>Email:</strong></p>
+    <p class="text-white">wchimakabxd@gmail.com</p>
+
+    <p class="mb-1 mt-3"><strong>Teléfono:</strong></p>
+    <p class="text-white">3052162144</p>
+</div>
 
 <hr>
 
-<!-- BOTÓN DIRECTO -->
+<!-- BOTÓN -->
 <a href="mailto:wchimakabxd@gmail.com" class="btn btn-danger mb-3 w-100">
 Enviar correo directo
 </a>
@@ -70,14 +76,11 @@ Enviar correo directo
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- SCRIPT -->
 <script>
 $(document).ready(function(){
 
-    // Animación
     $(".card").hide().fadeIn(1000);
 
-    // Validación
     $("#formulario").submit(function(e){
         e.preventDefault();
 
@@ -94,8 +97,6 @@ $(document).ready(function(){
         else{
             alert("✅ Mensaje enviado correctamente");
             $("#mensajeError").text("Mensaje enviado correctamente ✔").css("color","lime");
-
-            // Limpiar formulario
             $("#formulario")[0].reset();
         }
 
