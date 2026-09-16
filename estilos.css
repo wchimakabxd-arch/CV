@@ -5,47 +5,30 @@ body {
     margin: 0;
 }
 
-/* HEADER */
-header {
-    background: #111;
-    color: #ff003c;
-    text-align: center;
-    padding: 20px;
+/* NAVBAR */
+.navbar {
     border-bottom: 3px solid #ff003c;
 }
 
-/* NAV */
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ff003c;
-}
-
-/* TARJETAS BOOTSTRAP */
+/* TARJETAS */
 .card {
     background: #1a1a1a !important;
     border-radius: 10px;
     box-shadow: 0 0 15px #ff003c;
     border: none;
+    transition: 0.3s;
 }
 
-/* IMAGEN */
-img {
-    border-radius: 50%;
-    border: 3px solid #ff003c;
+.card:hover {
+    transform: scale(1.02);
 }
 
-/* TITULOS */
-h2, h3 {
+/* TEXTO */
+h1, h2, h3 {
     color: #ff003c;
 }
 
-/* LISTAS BOOTSTRAP */
+/* LISTAS */
 .list-group-item {
     background: transparent !important;
     color: white !important;
@@ -53,22 +36,17 @@ h2, h3 {
 }
 
 /* BOTONES */
-button, .btn {
+.btn-danger {
     background: #ff003c !important;
-    color: white !important;
-    border: none !important;
-    border-radius: 5px;
+    border: none;
 }
 
-button:hover, .btn:hover {
+.btn-danger:hover {
     background: #cc002f !important;
 }
 
 /* INPUTS */
 input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
     border-radius: 5px;
     border: none;
 }
@@ -78,11 +56,4 @@ hr {
     border: none;
     height: 2px;
     background: #ff003c;
-    margin: 20px 0;
-}
-
-/* EFECTO HOVER TARJETA */
-.card:hover {
-    transform: scale(1.01);
-    transition: 0.3s;
 }
