@@ -5,79 +5,51 @@ body {
     margin: 0;
 }
 
-/* NAVBAR */
+/* HEADER */
 header {
     background: #111;
+    color: #ff003c;
+    text-align: center;
+    padding: 20px;
     border-bottom: 3px solid #ff003c;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
-}
-
+/* MENU */
 nav a {
     color: white;
+    margin: 10px;
     text-decoration: none;
     font-weight: bold;
-    position: relative;
 }
 
-/* EFECTO ANIMADO */
-nav a::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: #ff003c;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
+nav a:hover {
+    color: #ff003c;
 }
 
-nav a:hover::after {
-    width: 100%;
-}
-
-/* SECCIONES */
+/* CONTENEDOR GENERAL */
 .container {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
+/* SECCIONES SEPARADAS */
 .section {
     background: #1a1a1a;
-    margin: 30px 0;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255,0,60,0.4);
-    opacity: 0;
-    transform: translateY(30px);
-    animation: aparecer 0.8s forwards;
-}
-
-.section:nth-child(2) { animation-delay: 0.2s; }
-.section:nth-child(3) { animation-delay: 0.4s; }
-.section:nth-child(4) { animation-delay: 0.6s; }
-
-@keyframes aparecer {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* FOTO */
-img {
-    border-radius: 50%;
-    border: 3px solid #ff003c;
+    margin: 25px 0;
+    padding: 20px;
+    border-left: 5px solid #ff003c;
+    border-radius: 10px;
 }
 
 /* TITULOS */
 h2, h3 {
     color: #ff003c;
+}
+
+/* IMAGEN */
+img {
+    border-radius: 50%;
+    border: 3px solid #ff003c;
 }
 
 /* LISTAS */
@@ -90,21 +62,15 @@ li {
     margin: 8px 0;
 }
 
-/* TARJETAS (barra horizontal info) */
-.info-bar {
-    display: flex;
-    justify-content: space-around;
-    background: #111;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
+/* FORMULARIO */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
 }
 
-.info-box {
-    text-align: center;
-}
-
-/* BOTONES */
 button {
     background: #ff003c;
     color: white;
@@ -116,13 +82,4 @@ button {
 
 button:hover {
     background: #cc002f;
-}
-
-/* FORM */
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    border-radius: 5px;
-    border: none;
 }
